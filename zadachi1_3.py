@@ -11,6 +11,7 @@ function = input(
 Выход:                                              Exit
 """
 )
+
 while function != 'Exit':
     if function == '1':
         N = 10
@@ -25,6 +26,7 @@ while function != 'Exit':
                     a[j], a[j + 1] = a[j + 1], a[j]
                 
         print(a)
+
         function = input(
 """
 Что будем делать?
@@ -35,6 +37,7 @@ while function != 'Exit':
 Выход:                                              Exit
 """
 )
+
     elif function == '2':
         list_1 = {1,2,3,4,5,6,7,8,9,0}
         list_2 = {1,2,3,4,5,6,7,7,22,9,0}
@@ -47,6 +50,7 @@ while function != 'Exit':
             '''
             a = list_1.symmetric_difference(list_2)
             print(False,'\n', 'Не пересекаются в списках: ', a)
+        
         function = input(
 """
 Что будем делать?
@@ -57,11 +61,13 @@ while function != 'Exit':
 Выход:                                              Exit
 """
 )
+
     elif function == '3':
         
         message = "Hello. My name is Anton."   
         result = Counter(message)
         print(result)
+        
         function = input(
 """
 Что будем делать?
@@ -72,11 +78,13 @@ while function != 'Exit':
 Выход:                                              Exit
 """
 )   
+
     elif function == '4':
         file = ("Weather", "Fine", "Sunshine", "Fine", "Car","Weather")
         print(file)
         file = {"Weather", "Fine", "Sunshine", "Fine", "Car","Weather"}
         print(file)
+        
         function = input(
 """
 Что будем делать?
@@ -87,9 +95,11 @@ while function != 'Exit':
 Выход:                                              Exit
 """
 )  
+
     else:
         print('Я тебя не понимаю!') 
         function = input(
+
 """
 Что будем делать?
 Сортировка пузырьковым методом:                     1
